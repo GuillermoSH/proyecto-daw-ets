@@ -1,3 +1,3 @@
 # Apartado de imagenes
 
-## Imagenes usadas dentro del proyecto
+#### Imagenes usadas dentro del proyecto
