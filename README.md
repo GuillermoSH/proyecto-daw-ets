@@ -42,6 +42,6 @@ Indice sobre el contenido y funcionamiento en su totalidad del producto.
 
 ##DIAGRAMAS DE ESTADO
 
-##DIAGRAMA DE CLASES [![https://github.com/GuillermoSH/proyecto-daw-ets/wiki/3.-DIAGRAMAS]
+##DIAGRAMA DE CLASES [!mas informacion][https://github.com/GuillermoSH/proyecto-daw-ets/wiki/3.-DIAGRAMAS]
 
 ##DIAGRAMA DE ENTIDAD RELACION
