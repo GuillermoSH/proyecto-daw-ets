@@ -19,29 +19,31 @@ En definitiva, todos los elementos anteriormente nombrados salen ganando, la pá
 Información más detallada: [más información](https://github.com/GuillermoSH/proyecto-daw-ets/wiki/1.-IMMORTAL-ZOMBIE-GAMES).
 
 
-#INDICE
+## INDICE
 
 
 Indice sobre el contenido y funcionamiento en su totalidad del producto.
 
-#MANUAL DE USUARIO
+## MANUAL DE USUARIO
 
 
 
-#MANUAL DE INSTALACION
+## MANUAL DE INSTALACION
 
 
-#PRUEBAS UNITARIAS
+## PRUEBAS UNITARIAS
 
 
-#DIAGRAMAS DE ACTIVIDAD
+## DIAGRAMAS DE ACTIVIDAD
 
 
-#DIAGRAMAS DE CASOS DE USO
+## DIAGRAMAS DE CASOS DE USO
 
 
-#DIAGRAMAS DE ESTADO
+## DIAGRAMAS DE ESTADO
 
-#DIAGRAMA DE CLASES [!mas informacion][https://github.com/GuillermoSH/proyecto-daw-ets/wiki/3.-DIAGRAMAS]
+## DIAGRAMA DE CLASES 
 
-#DIAGRAMA DE ENTIDAD RELACION
+[mas informacion](https://github.com/GuillermoSH/proyecto-daw-ets/wiki/3.-DIAGRAMAS)
+
+## DIAGRAMA DE ENTIDAD RELACION
