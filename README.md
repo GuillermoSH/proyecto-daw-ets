@@ -4,7 +4,7 @@
   <img src="https://github.com/GuillermoSH/proyecto-daw-ets/blob/main/Imagenes/Screenshot_5.png" width="25%" height="25%">
 </p>
 
-## DESCRIPCION##
+## DESCRIPCIO
 
 Nos disponemos a la realización de este proyecto con mucha ilusión al llevarlo a cabo.
 
