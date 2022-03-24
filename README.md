@@ -4,7 +4,7 @@
   <img src="https://github.com/GuillermoSH/proyecto-daw-ets/blob/main/Imagenes/Screenshot_5.png" width="25%" height="25%">
 </p>
 
-## DESCRIPCIO
+## DESCRIPCION
 
 Nos disponemos a la realización de este proyecto con mucha ilusión al llevarlo a cabo.
 
@@ -19,25 +19,25 @@ En definitiva, todos los elementos anteriormente nombrados salen ganando, la pá
 Información más detallada: [más información](https://github.com/GuillermoSH/proyecto-daw-ets/wiki/1.-IMMORTAL-ZOMBIE-GAMES).
 
 
-##INDICE
+#INDICE
 
 
 Indice sobre el contenido y funcionamiento en su totalidad del producto.
 
-##MANUAL DE USUARIO
+#MANUAL DE USUARIO
 
 
 
-##MANUAL DE INSTALACION
+#MANUAL DE INSTALACION
 
 
-##PRUEBAS UNITARIAS
+#PRUEBAS UNITARIAS
 
 
-##DIAGRAMAS DE ACTIVIDAD
+#DIAGRAMAS DE ACTIVIDAD
 
 
-##DIAGRAMAS DE CASOS DE USO
+#DIAGRAMAS DE CASOS DE USO
 
 
 ##DIAGRAMAS DE ESTADO
