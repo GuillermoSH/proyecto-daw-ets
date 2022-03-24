@@ -4,7 +4,7 @@
   <img src="https://github.com/GuillermoSH/proyecto-daw-ets/blob/main/Imagenes/Screenshot_5.png" width="25%" height="25%">
 </p>
 
-## Descripción
+## DESCRIPCION
 
 Nos disponemos a la realización de este proyecto con mucha ilusión al llevarlo a cabo.
 
@@ -17,3 +17,31 @@ Previamente a todo esto, el cliente que ha contratado nuestro producto no nos co
 En definitiva, todos los elementos anteriormente nombrados salen ganando, la página web (que es nuestro cliente) fomenta con nuestro producto que el usuario se mantenga más tiempo en la misma, haciendo que hasta que no se cierre el videojuego, el sitio web tampoco lo haga. Y por otra parte, nosotros ,como desarrolladora de videojuegos, financiamos la creación de futuros videojuegos y al usuario le ofrecémos entretenimiento y descuentos.
 
 Información más detallada: [más información](https://github.com/GuillermoSH/proyecto-daw-ets/wiki/1.-IMMORTAL-ZOMBIE-GAMES).
+
+
+##INDICE
+
+
+Indice sobre el contenido y funcionamiento en su totalidad del producto.
+
+##MANUAL DE USUARIO
+
+
+
+##MANUAL DE INSTALACION
+
+
+##PRUEBAS UNITARIAS
+
+
+##DIAGRAMAS DE ACTIVIDAD
+
+
+##DIAGRAMAS DE CASOS DE USO
+
+
+##DIAGRAMAS DE ESTADO
+
+##DIAGRAMA DE CLASES [![Diagram-Declases-Proyecto-drawio.png]
+
+##DIAGRAMA DE ENTIDAD RELACION
