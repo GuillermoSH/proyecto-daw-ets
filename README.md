@@ -1,6 +1,6 @@
 <div align="center">
   
-  [<img src="https://github.com/GuillermoSH/proyecto-daw-ets/blob/main/Imagenes/Screenshot_5.png" width="50%"/>](https://github.com/GuillermoSH/proyecto-daw-ets/blob/main/Imagenes/Screenshot_5.png)
+  [<img src="https://github.com/GuillermoSH/proyecto-daw-ets/blob/main/Imagenes/Immortal%20Zombie%20Games.png" width="50%"/>](https://github.com/GuillermoSH/proyecto-daw-ets/blob/main/Imagenes/Immortal%20Zombie%20Games.png)
   
 </div>
 
