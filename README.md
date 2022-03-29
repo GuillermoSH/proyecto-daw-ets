@@ -4,7 +4,7 @@
   
 </div>
 
-## INTRODUCCIÓN (ES)
+## INTRODUCCIÓN [ES]
 
 <div align="justify">
 
@@ -20,7 +20,7 @@
 
 </div>
 
-## INTRODUCTION (EN)
+## INTRODUCTION [EN]
 
 <div align="justify">
 
