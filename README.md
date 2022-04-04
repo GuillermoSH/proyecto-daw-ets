@@ -24,7 +24,7 @@
 
 <div align="justify">
 
-  This video game will be reflected in the form of a pop-up, as advertising, within the web page of our client who has previously contracted us and if the user decides to accept the offer of the game, he will enter it and all coins he obtains inside it may be redeemed in the store to buy products offered by our client.
+  This videogame will be reflected in the form of a pop-up, as advertising, within the web page of our client who has previously contracted us and if the user decides to accept the offer of the game, he will enter it and all coins he has obtained inside it may be redeemed in the store to buy products offered by our client.
   
   For more information click on [this link](https://github.com/GuillermoSH/proyecto-daw-ets/wiki/1.-IMMORTAL-ZOMBIE-GAMES).
 
