@@ -1,15 +1,13 @@
 package es.iespuerto.ets;
 
 /**
- * Clase de almacenamiento de los IDs de los objetos creados en el proyecto
- * @author Guillermo Sicilia Hernández
- * @version 0.1
+ * Un enumerado (o Enum) es una clase "especial" (tanto en Java como en otros
+ * lenguajes)
+ * que limitan la creación de objetos a los especificados explícitamente en la
+ * implementación
+ * de la clase.
  */
-public class ID {
-    /**
-     * Constructor vacío de la clase
-     */
-    public ID() {
-    }
-    
+public enum ID {
+    Player(),
+    Enemy();
 }

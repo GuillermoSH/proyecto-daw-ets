@@ -8,51 +8,51 @@ package es.iespuerto.ets;
  * @param simpleGameManager referencia del game manager
  */
 public class GameManager {
-    public byte simpleGameManager;
+    private int simpleGameManager;
 
     /**
      * Constructor para establecer el GameManager se introduce un id en forma de
      * byte
      * 
-     * @param simpleGameManager Propiedad de la clase
+     * @param simpleGameManager propiedad de la clase
      */
-    public GameManager(byte simpleGameManager) {
+    public GameManager(int simpleGameManager) {
         this.simpleGameManager = simpleGameManager;
     }
 
     /**
-     * metodo para inciar la aplicacion
+     * Metodo para inciar la aplicacion
      */
     public void Start() {
 
     }
 
     /**
-     * metodo para cargar la sesion
+     * Metodo para cargar la sesion
      */
     public void LoadLevel() {
 
     }
 
     /**
-     * metodo que arranca el juego
+     * Metodo que arranca el juego
      */
     public void StartGame() {
 
     }
 
     /**
-     * metodo para salir de la aplicacion
+     * Metodo para salir de la aplicacion
      */
     public void Quit() {
 
     }
 
-    public byte getSimpleGameManager() {
-        return simpleGameManager;
+    public int getSimpleGameManager() {
+        return this.simpleGameManager;
     }
 
-    public void setSimpleGameManager(byte simpleGameManager) {
+    public void setSimpleGameManager(int simpleGameManager) {
         this.simpleGameManager = simpleGameManager;
     }
 

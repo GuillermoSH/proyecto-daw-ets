@@ -1,23 +1,36 @@
 package es.iespuerto.ets;
 
-/**
- * Clase que almacena la información sobre el jugador dentro del juego
- * @param UserId id del jugador
- * @author Guillermo Sicilia Hernández
- * @version 0.1
- */
-public class Player {
-    public String UserId;
+import java.awt.*;
+import java.util.Random;
 
-    public Player(String userId) {
-        UserId = userId;
+public class Player extends GameObject {
+
+    Random r = new Random();
+
+    /**
+     * Constructor de clase abtracta Player que
+     * a su vez hereda las propiedades y metodos de GameObject.
+     * 
+     * @param x
+     * @param y
+     * @param id
+     */
+    public Player(int x, int y, ID id) {
+        super(x, y, id);
     }
 
-    public String getUserId() {
-        return UserId;
+    /**
+     * 
+     */
+    @Override
+    public void render(Graphics g) {
+        g.setColor(Color.BLACK);
+        g.fillRect(x, y, 32, 32);
     }
 
-    public void setUserId(String userId) {
-        UserId = userId;
+    @Override
+    public void tick() {
+        x += velX;
+        y += velY;
     }
 }

@@ -1,34 +1,44 @@
 package es.iespuerto.ets;
 
+import java.awt.*;
+
 /**
- * Clase que se encarga de que todo lo que se encuentra en el juego sea un
- * objeto
- * 
- * @author Jonathan
- * @param x,y,veIX,veIY ubicaciones en el entorno grafico de los objetos
- * @param id            para referenciar objetos
+ * clase que se va a encargar de transformar
+ * todos los elementos que aparezca en el juego
+ * en objetos (necesitan un ID).
  */
-public class GameObject {
-    protected int x, y, veIX, veIY;
+public abstract class GameObject {
+    protected int x;
+    protected int y;
     protected ID id;
+    protected int velX;
+    protected int velY;
 
     /**
-     * Constructor que se encarga se crear objetos
+     * Constructor para GameObject , los parametros
+     * que se insertan en el metodo son los de la propia clase
+     * de manera automatica.
      * 
-     * @param x    referencia a propiedad de la clase
-     * @param y    referencia a propiedad de la clase
-     * @param veIX referencia a propiedad de la clase
-     * @param veIY referencia a propiedad de la clase
-     * @param id   referencia a propiedad de la clase
+     * @param x  vector x de posicion del objeto
+     * @param y  vector y de posicion del objeto
+     * @param id identificador del objeto
      */
-    public GameObject(int x, int y, int veIX, int veIY, ID id) {
+    protected GameObject(int x, int y, ID id) {
         this.x = x;
         this.y = y;
-        this.veIX = veIX;
-        this.veIY = veIY;
         this.id = id;
     }
 
+    public abstract void tick();
+
+    public abstract void render(Graphics g);
+
+    /**
+     * seters and getters para modificar y obtener valor de
+     * las propiedades de movimiento posicion e identificador los GameObject
+     * 
+     * @return
+     */
     public int getX() {
         return x;
     }
@@ -45,22 +55,6 @@ public class GameObject {
         this.y = y;
     }
 
-    public int getVeIX() {
-        return veIX;
-    }
-
-    public void setVeIX(int veIX) {
-        this.veIX = veIX;
-    }
-
-    public int getVeIY() {
-        return veIY;
-    }
-
-    public void setVeIY(int veIY) {
-        this.veIY = veIY;
-    }
-
     public ID getId() {
         return id;
     }
@@ -69,4 +63,19 @@ public class GameObject {
         this.id = id;
     }
 
+    public int getVelX() {
+        return velX;
+    }
+
+    public void setVelX(int velX) {
+        this.velX = velX;
+    }
+
+    public int getVelY() {
+        return velY;
+    }
+
+    public void setVelY(int velY) {
+        this.velY = velY;
+    }
 }

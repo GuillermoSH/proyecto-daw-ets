@@ -1,57 +1,135 @@
 package es.iespuerto.ets;
 
-import java.net.Proxy.Type;
+import java.awt.*;
+import java.awt.image.BufferStrategy;
+import java.util.Random;
 
 /**
- * Esta es la clase principal del juego y se encarga de referencias los objetos
- * que en el aparecen
- * 
- * @author Jonathan
- * @param serialVersionUID id de la sesion del juego
- * @param field            area donde se despliega el juego
- * @param width            ancho
+ * Me quede en el min = "13:42 / 20:28"
  */
 
-public class Game {
-    private long serialVersionUID;
-    private int width;
-    public Type field;
+/**
+ * Runnable es solo una interfaz que necesita para instanciar un hilo para
+ * contenerlo. Mientras que el hilo contiene ya la capacidad de generar un hilo.
+ * Si usted extiende el hilo usted no puede extender cualquier cosa (Java no
+ * admite la herencia múltiple). Puede tener múltiples interfaces en una clase,
+ * por lo tanto podría tener Runnable.
+ */
+public class Game extends Canvas implements Runnable {
+    // Version en serie generada
+    private static final long serialVersionUID = 3L;
+    public static final int WIDTH = 640;
+    public static final int HEIGHT = WIDTH / 20 * 12;
+    // Hilo del proceso privado
+    private Thread thread;
+    private boolean running = false;
+
+    private Random r;
+    private Handler handler;
 
     /**
-     * Constructor que se encarga de desarrollar y lanzar el juego
-     * 
-     * @param serialVersionUID se refiera a la propiedad de la clase
-     * @param width            se refiere al ancho que tendra el juego
-     * @param field            el area donde se despliega el juego
+     * Se crea una nueva instancia de la clase game, llamando al constructor.
      */
-    public Game(long serialVersionUID, int width, Type field) {
-        this.serialVersionUID = serialVersionUID;
-        this.width = width;
-        this.field = field;
+    public Game() {
+        handler = new Handler();
+        // this.addKeyListener(new Keyinput());
+
+        new Window(WIDTH, HEIGHT, "Zombie Game", this);
+
+        r = new Random();
+
+        for (int i = 0; i < 50; i++) {
+            handler.addObject(new Player(r.nextInt(WIDTH), r.nextInt(HEIGHT), ID.Player));
+        }
     }
 
-    public long getSerialVersionUID() {
-        return serialVersionUID;
+    /**
+     * Metodo de arranque de la aplicacion que se sincroniza con un un objeto hilo
+     * que hemos instanciado previamente
+     */
+    public synchronized void start() {
+        thread = new Thread(this);
+        thread.start();
+        running = true;
     }
 
-    public void setSerialVersionUID(long serialVersionUID) {
-        this.serialVersionUID = serialVersionUID;
+    /**
+     * metodo para matar la aplicacion que recoje una excepcion
+     */
+    public synchronized void stop() {
+        try {
+            thread.join();
+            running = false;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
-    public int getWidth() {
-        return width;
+    /**
+     * Game loop (Actualización de la física; se actualizan los datos del juego,
+     * como por ejemplo la posición "x" e "y" para un caracter (posiciones de los
+     * sprites, puntuación ...) Dibujo; el dibujo de la imagen que se ve en la
+     * pantalla. Cuando este método es llamado repetidamente produce la percepción
+     * de ser una película o una animación.)
+     */
+    public void run() {
+        long lastime = System.nanoTime();
+        double amountOfTicks = 60.0;
+        double ns = 1000000000 / amountOfTicks;
+        double delta = 0;
+        long timer = System.currentTimeMillis();
+        int frames = 0;
+        while (running) {
+            long now = System.nanoTime();
+            delta += (now - lastime) / ns;
+            lastime = now;
+            while (delta >= 1) {
+                tick();
+                delta--;
+            }
+            if (running)
+                render();
+            frames++;
+
+            if (System.currentTimeMillis() - timer > 1000) {
+                timer += 1000;
+                // System.out.println("FPS: " + frames);
+                frames = 0;
+            }
+        }
+        stop();
     }
 
-    public void setWidth(int width) {
-        this.width = width;
+    private void tick() {
+        handler.tick();
     }
 
-    public Type getField() {
-        return field;
-    }
+    /**
+     * Metodo que hace que la ventana se renderice el numero de fps que queramos y
+     * el uso de la memoria, ademas del color de fondo de la pantalla. Hay que
+     * importar la libreria "import javax.swing.JFrame;" para que funcione
+     * BufferStrategy("La clase BufferStrategy representa el mecanismo con el que
+     * organizar la memoria compleja en un Canvas o Window en particular . Las
+     * limitaciones de hardware y software determinan si se puede implementar una
+     * estrategia de búfer particular y cómo. Estas limitaciones son detectables a
+     * través de las capacidades de GraphicsConfiguration utilizadas al crear el
+     * Canvas o la Window .")
+     */
+    private void render() {
 
-    public void setField(Type field) {
-        this.field = field;
-    }
+        BufferStrategy bs = this.getBufferStrategy();
+        if (bs == null) {
+            this.createBufferStrategy(2);
+            return;
+        }
+        Graphics g = bs.getDrawGraphics();
 
+        g.setColor(Color.DARK_GRAY);
+        g.fillRect(0, 0, WIDTH, HEIGHT);
+
+        handler.render(g);
+
+        g.dispose();
+        bs.show();
+    }
 }

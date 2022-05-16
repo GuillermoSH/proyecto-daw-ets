@@ -10,9 +10,9 @@ package es.iespuerto.ets;
  * @param difficulty propiedad de dificultad de enemigos
  */
 public class Enemy {
-    public String color;
-    public String difficulty;
-    public byte amount;
+    private String color;
+    private String difficulty;
+    private int amount;
 
     /**
      * Constructor que genera la estructura basica de los enemigos
@@ -21,7 +21,7 @@ public class Enemy {
      * @param difficulty Dificultad del enemigo
      * @param amount     Cantidad de los enemigos
      */
-    public Enemy(String color, String difficulty, byte amount) {
+    public Enemy(String color, String difficulty, int amount) {
         this.color = color;
         this.difficulty = difficulty;
         this.amount = amount;
@@ -33,7 +33,7 @@ public class Enemy {
      * @return devuelve el color
      */
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     /**
@@ -51,7 +51,7 @@ public class Enemy {
      * @return Devuelve la dificultad del enemigo en esa intancia
      */
     public String getDifficulty() {
-        return difficulty;
+        return this.difficulty;
     }
 
     /**
@@ -68,8 +68,8 @@ public class Enemy {
      * 
      * @return devuelve la vantidad
      */
-    public byte getAmount() {
-        return amount;
+    public int getAmount() {
+        return this.amount;
     }
 
     /**
@@ -77,7 +77,7 @@ public class Enemy {
      * 
      * @param amount se refiere a la cantidad
      */
-    public void setAmount(byte amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 

@@ -1,69 +1,45 @@
 package es.iespuerto.ets;
 
+import java.awt.*;
+import javax.swing.JFrame;
+
 /**
- * Clase que genera la pantalla en la que se va a ver el videojuego que se estara ejecutando
- * @param title titulo del videojuego
- * @param width ancho de la pantalla
- * @param height alto de la pantalla
- * @author Guillermo Sicilia Hernandez
- * @version 0.1
+ * Clase que crea una ventada donde se va a ejecutar la aplicacion
  */
-public class Window {
-    public String title;
-    public int width,height;
-    
+public class Window extends Canvas {
+
+    private static final long serialVersionUID = -2284879212465893870L;
+
     /**
-     * Constructor con los 3 parametros de la clase
-     * @param title titulo del videojuego
-     * @param width ancho de la pantalla
-     * @param height alto de la pantalla
+     * Constructor publico para la ventana de la aplicacion, se define el tamaño
+     * maximo minimo
+     * y predefinido de la misma
+     * 
+     * @param width  ancho de la ventana
+     * @param height altura de la ventana
+     * @param title  nombre de la aplicacion
      */
-    public Window(String title, int width, int height) {
-        this.title = title;
-        this.width = width;
-        this.height = height;
-    }
-    /**
-     * Getter del parametro title
-     * @return title
-     */
-    public String getTitle() {
-        return title;
-    }
-    /**
-     * Setter del parametro title
-     * @param title titulo del videojuego
-     */
-    public void setTitle(String title) {
-        this.title = title;
-    }
-    /**
-     * Getter del parametro width
-     * @return width
-     */
-    public int getWidth() {
-        return width;
-    }
-    /**
-     * Setter del parametro width
-     * @param width ancho de la pantalla
-     */
-    public void setWidth(int width) {
-        this.width = width;
-    }
-    /**
-     * Getter del parametro height
-     * @return height
-     */
-    public int getHeight() {
-        return height;
-    }
-    /**
-     * Setter del parametro height
-     * @param height altura de la pantalla
-     */
-    public void setHeight(int height) {
-        this.height = height;
+    public Window(int width, int height, String title, Game game) {
+
+        /**
+         * Los frames a los que va a ir la ventana
+         */
+        JFrame frame = new JFrame(title);
+
+        frame.setPreferredSize(new Dimension(width, height));
+        frame.setMaximumSize(new Dimension(width, height));
+        frame.setMinimumSize(new Dimension(width, height));
+
+        /**
+         * "JFrame.EXIT_ON_CLOSE" finaliza el hilo que lleva las operaciones de la
+         * aplicacion
+         */
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.setLocationRelativeTo(null);
+        frame.add(game);
+        frame.setVisible(true);
+        game.start();
     }
 
 }

@@ -10,8 +10,10 @@ package es.iespuerto.ets;
  * @param health     vida del jugador
  */
 public class HUD {
-    private int score, level, greenValue;
-    public int health;
+    private int score;
+    private int level;
+    private int greenValue;
+    private int health;
 
     /**
      * Contructor que inicia la interfaz grafica
