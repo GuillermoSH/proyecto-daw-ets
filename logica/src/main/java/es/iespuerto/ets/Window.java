@@ -42,4 +42,7 @@ public class Window extends Canvas {
         game.start();
     }
 
+    public static long getSerialversionuid() {
+        return serialVersionUID;
+    }
 }

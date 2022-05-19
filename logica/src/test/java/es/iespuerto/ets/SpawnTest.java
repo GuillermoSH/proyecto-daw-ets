@@ -17,7 +17,7 @@ public class SpawnTest {
 
         spawnJugador1 = new Spawn(handler, hud, random);
     }
-
+    /*
     @Test
     public void getHandlerTest() {
         assertEquals(handler, spawnJugador1.getHandler());
@@ -50,5 +50,5 @@ public class SpawnTest {
     public void setRandomTest() {
         spawnJugador1.setRandom(random);
         assertEquals(random, spawnJugador1.getRandom());
-    }
+    }*/
 }
