@@ -7,7 +7,10 @@ import java.awt.Graphics;
  * Handler permite enviar y procesar objetos Message y Runnable asociados con
  * MessageQueue de un thread.
  * 
- * crea una lista tambien crea y modifica o elimna los GameObjects
+ * Crea una lista tambien en la que se crean y modifican o elimnan los
+ * GameObjects
+ * 
+ * @author Jonathan
  */
 public class Handler {
     private List<GameObject> objects = new LinkedList<>();
@@ -28,6 +31,11 @@ public class Handler {
         }
     }
 
+    /**
+     * Getter de la variable miembro objects
+     * 
+     * @return la lista de objetos GameObjects
+     */
     public List<GameObject> getObjects() {
         return this.objects;
     }

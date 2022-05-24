@@ -4,10 +4,11 @@ package es.iespuerto.ets;
  * Esta clase se encarga de establecer las caracteristicas que tienen los
  * enemigos dentro del juego
  * 
- * @author Jonathan
  * @param color      Color de los enemigos (puede variar)
  * @param amount     Cantidad de enemigos
  * @param difficulty propiedad de dificultad de enemigos
+ * 
+ * @author Jonathan
  */
 public class Enemy {
     private String color;

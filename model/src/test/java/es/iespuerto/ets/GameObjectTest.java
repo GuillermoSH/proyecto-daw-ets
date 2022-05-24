@@ -1,7 +1,6 @@
 package es.iespuerto.ets;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 public class GameObjectTest {
     GameObject objeto1 = null;

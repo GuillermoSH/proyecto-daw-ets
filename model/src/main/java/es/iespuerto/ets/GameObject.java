@@ -3,9 +3,8 @@ package es.iespuerto.ets;
 import java.awt.*;
 
 /**
- * clase que se va a encargar de transformar
- * todos los elementos que aparezca en el juego
- * en objetos (necesitan un ID).
+ * Clase que se va a encargar de transformar todos los elementos que aparezca en
+ * el juego en objetos (necesitan un ID).
  */
 public abstract class GameObject {
     protected int x;
@@ -34,10 +33,8 @@ public abstract class GameObject {
     public abstract void render(Graphics g);
 
     /**
-     * seters and getters para modificar y obtener valor de
-     * las propiedades de movimiento posicion e identificador los GameObject
-     * 
-     * @return
+     * seters y getters para modificar y obtener valor de las propiedades de
+     * movimiento posicion e identificador los GameObject
      */
     public int getX() {
         return x;

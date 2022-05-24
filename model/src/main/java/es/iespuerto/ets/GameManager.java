@@ -48,10 +48,20 @@ public class GameManager {
 
     }
 
+    /**
+     * Getter de la variable miembro simpleGameManager
+     * 
+     * @return la variable simpleGameManager
+     */
     public int getSimpleGameManager() {
         return this.simpleGameManager;
     }
 
+    /**
+     * Setter de la variable miembro simpleGameManager
+     * 
+     * @param simpleGameManager referencia del game manager
+     */
     public void setSimpleGameManager(int simpleGameManager) {
         this.simpleGameManager = simpleGameManager;
     }

@@ -6,6 +6,8 @@ package es.iespuerto.ets;
  * que limitan la creación de objetos a los especificados explícitamente en la
  * implementación
  * de la clase.
+ * 
+ * @author GuillermoSH
  */
 public enum ID {
     Player(),

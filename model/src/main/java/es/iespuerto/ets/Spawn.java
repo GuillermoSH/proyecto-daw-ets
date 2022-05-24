@@ -9,7 +9,7 @@ import java.util.logging.Handler;
  * @param handler handler del objeto Handler de java
  * @param hud     hud de la pantalla
  * @param random  generacion aleatoria de los jugadores
- * @author Guillermo Sicilia Hernandez
+ * @author GuillermoSH
  * @version 0.1
  */
 public class Spawn {
@@ -18,7 +18,7 @@ public class Spawn {
     private Random random;
 
     /**
-     * Constructor con los parametros de la clase
+     * Constructor con las variables miembro de la clase
      * 
      * @param handler handler del objeto Handler de java
      * @param hud     hud de la pantalla
@@ -57,7 +57,7 @@ public class Spawn {
      * @return hud
      */
     public HUD getHud() {
-        return hud;
+        return this.hud;
     }
 
     /**
@@ -75,7 +75,7 @@ public class Spawn {
      * @return Random
      */
     public Random getRandom() {
-        return random;
+        return this.random;
     }
 
     /**
@@ -84,7 +84,7 @@ public class Spawn {
      * @param random generacion aleatoria de los jugadores
      */
     public void setRandom(Random random) {
-        random = random;
+        this.random = random;
     }
 
 }

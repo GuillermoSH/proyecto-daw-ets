@@ -14,6 +14,8 @@ import java.util.Random;
  * Si usted extiende el hilo usted no puede extender cualquier cosa (Java no
  * admite la herencia múltiple). Puede tener múltiples interfaces en una clase,
  * por lo tanto podría tener Runnable.
+ * 
+ * @author Jonathan
  */
 public class Game extends Canvas implements Runnable {
     // Version en serie generada
