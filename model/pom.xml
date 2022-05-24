@@ -7,9 +7,9 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   
-  <artifactId>integracion</artifactId>
+  <artifactId>logica</artifactId>
 
-  <name>modulo integracion</name>
+  <name>model module</name>
   <url>${web}</url>
 
 </project>

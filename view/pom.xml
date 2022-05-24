@@ -7,9 +7,9 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
   
-  <artifactId>logica</artifactId>
+  <artifactId>presentacion</artifactId>
 
-  <name>modulo logica</name>
+  <name>view module</name>
   <url>${web}</url>
 
 </project>

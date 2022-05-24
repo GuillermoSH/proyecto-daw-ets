@@ -147,9 +147,9 @@
   </reporting>
   <modules>
 
-    <module>presentacion</module>
-    <module>logica</module>
-    <module>integracion</module>
+    <module>controller</module>
+    <module>model</module>
+    <module>view</module>
 
   </modules>
 </project>
