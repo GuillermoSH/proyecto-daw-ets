@@ -4,9 +4,7 @@ import java.awt.*;
 import java.awt.image.BufferStrategy;
 import java.util.Random;
 
-/**
- * Me quede en el min = "13:42 / 20:28"
- */
+// Me quede en el min = "13:42 / 20:28"
 
 /**
  * Runnable es solo una interfaz que necesita para instanciar un hilo para
