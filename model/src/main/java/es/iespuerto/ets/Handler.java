@@ -44,15 +44,26 @@ public class Handler {
      * Metodo que añade objectos a la lista
      * 
      * @param object
+     * @return true si se pudo realizar la operacion
      */
-    public void addObject(GameObject object) {
+    public boolean addObject(GameObject object) {
+        if (!this.objects.add(object)) {
+            return false;
+        }
         this.objects.add(object);
+        return true;
     }
 
     /**
      * Metodo que elimina objectos a la lista
+     * 
+     * @return true si se pudo realizar la operacion
      */
-    public void removeObject(GameObject object) {
+    public boolean removeObject(GameObject object) {
+        if (!this.objects.contains(object)) {
+            return false;
+        }
         this.objects.remove(object);
+        return true;
     }
 }
