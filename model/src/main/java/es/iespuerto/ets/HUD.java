@@ -3,18 +3,15 @@ package es.iespuerto.ets;
 /**
  * Clase que se encarga de establecer la interface grafica del usuario
  * 
+ * @author Jonathan
  * @param score      puntuacion
  * @param level      nivel donde se encuentra el jugador
  * @param greenValue
  * @param health     vida del jugador
- * 
- * @author Jonathan
  */
 public class HUD {
-    private int score;
-    private int level;
-    private int greenValue;
-    private int health;
+    private int score, level, greenValue;
+    public int health;
 
     /**
      * Contructor que inicia la interfaz grafica
@@ -31,9 +28,6 @@ public class HUD {
         this.health = health;
     }
 
-    /**
-     * Getters y setters de las variables miembro de la clase
-     */
     public int getScore() {
         return score;
     }
