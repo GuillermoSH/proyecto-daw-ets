@@ -11,7 +11,8 @@ public abstract class GameObject {
 
     protected int x, y;
     protected ID id;
-    protected int velX, velY;
+    protected int velX;
+    protected int velY;
 
     /**
      * Constructor para GameObject , los parametros
@@ -75,7 +76,7 @@ public abstract class GameObject {
     }
 
     public void setvelY(int velY) {
-        velY = velY;
+        this.velY = velY;
     }
 
 }

@@ -2,6 +2,7 @@ package es.iespuerto.ets;
 
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.*;
+import java.util.logging.Handler;
 
 public class SpawnTest {
     Spawn spawnJugador1 = null;
@@ -11,7 +12,6 @@ public class SpawnTest {
 
     @BeforeEach
     public void beforeEach() {
-        handler = new Handler();
         hud = new HUD(12,2,13,100);
         random = new Random();
 
@@ -30,7 +30,7 @@ public class SpawnTest {
 */
     @Test
     public void getRandomTest() {
-        assertEquals(null, spawnJugador1.getRandom());
+        assertNotNull(spawnJugador1.getRandom());
     }
 /*
     @Test

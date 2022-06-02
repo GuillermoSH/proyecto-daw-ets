@@ -9,6 +9,7 @@ import org.junit.jupiter.api.*;
 public class HandlerTest {
     Handler handler = null;
     GameObject objeto = null;
+    ID id;
 
     @BeforeEach
     public void before() {
@@ -16,7 +17,7 @@ public class HandlerTest {
     }
 
     @Test
-    public void addObjectTest() {
+    public void addObjectCorrectTest() {
         assertTrue(handler.addObject(objeto));
     }
 
@@ -29,7 +30,7 @@ public class HandlerTest {
     @Test
     public void getObjects() {
         handler.addObject(objeto);
-        List<GameObject> lista = new LinkedList<>(Arrays.asList(null,null));
+        List<GameObject> lista = new LinkedList<>(Arrays.asList(objeto));
         assertEquals(lista,handler.getObjects());
     }
 }

@@ -10,7 +10,7 @@ import javax.swing.JFrame;
  */
 public class Window extends Canvas {
 
-    private static final long serialVersionUID = -2284879212465893870L;
+    public static final long serialVersionUID = -2284879212465893870L;
 
     /**
      * Constructor publico para la ventana de la aplicacion, se define el tamaño

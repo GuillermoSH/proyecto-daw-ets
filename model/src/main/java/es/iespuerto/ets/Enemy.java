@@ -5,14 +5,11 @@ package es.iespuerto.ets;
  * enemigos dentro del juego
  * 
  * @author Jonathan
- * @param color      Color de los enemigos (puede variar)
- * @param amount     Cantidad de enemigos
- * @param difficulty propiedad de dificultad de enemigos
  */
 public class Enemy {
     public String color;
     public String difficulty;
-    public byte amount;
+    public int amount;
 
     /**
      * Constructor que genera la estructura basica de los enemigos
@@ -21,7 +18,7 @@ public class Enemy {
      * @param difficulty Dificultad del enemigo
      * @param amount     Cantidad de los enemigos
      */
-    public Enemy(String color, String difficulty, byte amount) {
+    public Enemy(String color, String difficulty, int amount) {
         this.color = color;
         this.difficulty = difficulty;
         this.amount = amount;
@@ -68,7 +65,7 @@ public class Enemy {
      * 
      * @return devuelve la vantidad
      */
-    public byte getAmount() {
+    public int getAmount() {
         return amount;
     }
 
@@ -77,7 +74,7 @@ public class Enemy {
      * 
      * @param amount se refiere a la cantidad
      */
-    public void setAmount(byte amount) {
+    public void setAmount(int amount) {
         this.amount = amount;
     }
 

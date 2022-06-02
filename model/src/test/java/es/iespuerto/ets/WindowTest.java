@@ -16,7 +16,7 @@ public class WindowTest {
     }
 
     @Test
-    public void getSerialversionuidTest() {
-        assertEquals(-2284879212465893870L, ventana1.getSerialversionuid());
+    public void obtenerNumeroSerie() {
+        assertEquals(-2284879212465893870L,Window.serialVersionUID);
     }
 }

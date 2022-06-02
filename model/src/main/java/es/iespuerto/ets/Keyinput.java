@@ -4,7 +4,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;
 
 public class Keyinput extends KeyAdapter {
-
     private Handler handler;
 
     public Keyinput(Handler handler) {
