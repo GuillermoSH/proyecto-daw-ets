@@ -6,7 +6,7 @@ import java.util.logging.Handler;
  * Clase que genera la zona de "Spawn" de los jugadores dentro de la zona en el
  * juego
  * 
- * @author Guillermo Sicilia Hernandez
+ * @author GuillermoSH
  */
 public class Spawn {
     private Handler handler;

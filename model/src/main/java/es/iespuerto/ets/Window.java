@@ -7,6 +7,8 @@ import javax.swing.JFrame;
 
 /**
  * Clase que crea una ventada donde se va a ejecutar la aplicacion
+ * 
+ * @author GuillermoSH
  */
 public class Window extends Canvas {
 

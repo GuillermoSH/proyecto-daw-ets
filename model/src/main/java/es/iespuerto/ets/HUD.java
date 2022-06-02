@@ -4,10 +4,6 @@ package es.iespuerto.ets;
  * Clase que se encarga de establecer la interface grafica del usuario
  * 
  * @author Jonathan
- *         score puntuacion
- *         level nivel donde se encuentra el jugador
- *         greenValue
- *         health vida del jugador
  */
 public class HUD {
     private int score, level, greenValue;

@@ -3,13 +3,25 @@ package es.iespuerto.ets;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyAdapter;
 
+/**
+ * Es una clase que maneja las entradas clave para el juego.
+ * 
+ * @author GuillermoSH
+ */
 public class Keyinput extends KeyAdapter {
     private Handler handler;
 
+    // Un constructor que toma un controlador como parámetro.
     public Keyinput(Handler handler) {
         this.handler = handler;
     }
 
+    /**
+     * "Si la tecla presionada es W, S, D o A, entonces la velocidad del jugador se establece en 5 o
+     * -5".
+     * 
+     * @param e Evento clave
+     */
     public void keyPressed(KeyEvent e) {
 
         int Key = e.getKeyCode();
@@ -33,6 +45,11 @@ public class Keyinput extends KeyAdapter {
         }
     }
 
+    /**
+     * Cuando se suelta la tecla, la velocidad del jugador se establece en 0.
+     * 
+     * @param e Evento clave
+     */
     public void KeyReleased(KeyEvent e) {
         int Key = e.getKeyCode();
 

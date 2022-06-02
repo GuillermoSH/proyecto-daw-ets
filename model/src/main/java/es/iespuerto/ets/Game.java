@@ -24,7 +24,8 @@ public class Game extends Canvas implements Runnable {
      * version en serie generada
      */
     private static final long serialVersionUID = 3L;
-    public static final int WIDTH = 640, HEIGHT = WIDTH / 12 * 9;
+    public static final int WIDTH = 640;
+    public static final int HEIGHT = WIDTH / 12 * 9;
 
     /**
      * Hilo del proceso privado

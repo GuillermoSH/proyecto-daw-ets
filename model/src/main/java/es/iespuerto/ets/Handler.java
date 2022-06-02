@@ -8,6 +8,8 @@ import java.util.*;
  * MessageQueue de un thread.
  * 
  * crea una lista tambien crea y modifica o elimna los GameObjects
+ * 
+ * @author GuillermoSH
  */
 public class Handler {
 

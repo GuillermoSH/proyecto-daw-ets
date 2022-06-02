@@ -3,13 +3,14 @@ package es.iespuerto.ets;
 import java.awt.Graphics;
 
 /**
- * clase que se va a encargar de transformar
+ * Clase que se va a encargar de transformar
  * todos los elementos que aparezca en el juego
  * en objetos (necesitan un ID).
  */
 public abstract class GameObject {
 
-    protected int x, y;
+    protected int x;
+    protected int y;
     protected ID id;
     protected int velX;
     protected int velY;

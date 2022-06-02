@@ -4,6 +4,11 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Random;
 
+/**
+ * La clase Player amplia la clase GameObject e implementa los metodos tick() y render()
+ * 
+ * @author GuillermoSH
+ */
 public class Player extends GameObject {
 
     Random r = new Random();
@@ -22,7 +27,9 @@ public class Player extends GameObject {
     }
 
     /**
+     * Esta funcion se llama cada vez que se actualiza el juego y dibuja al jugador en la pantalla.
      * 
+     * @param g Gráficos
      */
     @Override
     public void render(Graphics g) {
@@ -30,6 +37,10 @@ public class Player extends GameObject {
         g.fillRect(x, y, 32, 32);
     }
 
+    /**
+     * La funcion de tic se llama cada vez que se actualiza el juego, y mueve el objeto por la
+     * velocidad en las direcciones x e y.
+     */
     @Override
     public void tick() {
         x += velX;
