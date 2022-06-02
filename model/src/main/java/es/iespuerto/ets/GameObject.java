@@ -37,7 +37,7 @@ public abstract class GameObject {
      * seters and getters para modificar y obtener valor de
      * las propiedades de movimiento posicion e identificador los GameObject
      * 
-     * @return
+     * @return retorna x
      */
     public int getX() {
         return x;
