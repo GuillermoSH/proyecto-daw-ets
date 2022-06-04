@@ -17,6 +17,7 @@ public class WindowTest {
 
     @Test
     public void obtenerNumeroSerie() {
-        assertEquals(-2284879212465893870L,Window.serialVersionUID);
+        long serialVersionUID = -2284879212465893870L;
+        assertEquals(serialVersionUID,Window.serialVersionUID);
     }
 }

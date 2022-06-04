@@ -10,7 +10,6 @@ import java.util.Random;
  * @author Jonathan
  */
 public class BasicEnemy extends GameObject {
-
     Random r = new Random();
 
     /**
@@ -29,7 +28,7 @@ public class BasicEnemy extends GameObject {
     }
 
     /**
-     * Esta función se llama cada vez que se actualiza el juego y dibuja un cuadrado rojo en las
+     * Esta funcion se llama cada vez que se actualiza el juego y dibuja un cuadrado rojo en las
      * coordenadas del jugador.
      * 
      * @param g Gráficos
@@ -42,7 +41,7 @@ public class BasicEnemy extends GameObject {
     }
 
     /**
-     * La función se llama tick() y anula la función tick() en la clase GameObject
+     * La funcion se llama tick() y anula la función tick() en la clase GameObject
      */
     @Override
     public void tick() {
