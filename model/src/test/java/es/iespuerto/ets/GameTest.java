@@ -9,4 +9,9 @@ public class GameTest {
     public void beforeEach() {
         game = new Game();
     }
+
+    @Test
+    public void runTest() {
+        game.start();
+    }
 }
